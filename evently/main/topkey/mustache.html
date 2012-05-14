@@ -1,0 +1,16 @@
+<h3>Table 1. Top 50  keywords</h3>
+    <table class=stats>
+      <thead>
+      <tr>
+        <th scope=col align=right>Documents</th>
+        <th scope=col align=left>Keyword</th>
+      </tr>
+      </thead>
+      {{#keys}}
+      <tr>
+          <td align=right>{{ value }}</td>
+          <td align=left>{{ key }}</td>
+      </tr>
+      {{/keys}}
+    </table>
+

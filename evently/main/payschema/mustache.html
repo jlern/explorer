@@ -1,0 +1,16 @@
+<h3>Table 2. Documents in node by payload schema</h3>
+    <table class=stats>
+      <thead>
+      <tr>
+        <th scope=col align=right>Documents</th>
+        <th scope=col align=left>Payload schema</th>
+      </tr>
+      </thead>
+      {{#stats}}
+      <tr>
+          <td align=right>{{ value }}</td>
+          <td align=left>{{ key }}</td>
+      </tr>
+      {{/stats}}
+    </table>
+

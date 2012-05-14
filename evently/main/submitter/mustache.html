@@ -1,0 +1,16 @@
+<h3>Table 1. Documents in node by identity of submitter</h3>
+    <table class=stats>
+      <thead>
+      <tr>
+        <th scope=col align=right>Documents</th>
+        <th scope=col align=left>Submitter</th>
+      </tr>
+      </thead>
+      {{#stats}}
+      <tr>
+          <td align=right>{{ value }}</td>
+          <td align=left><a href="{{ node_address }}/slice?identity={{ key }}" target="_blank">{{ key }}</a></td>
+      </tr>
+      {{/stats}}
+    </table>
+

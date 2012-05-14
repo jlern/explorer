@@ -1,0 +1,16 @@
+<h3>Table 2. Keyword index</h3>
+    <table class=stats>
+      <thead>
+      <tr>
+        <th scope=col align=right>Documents</th>
+        <th scope=col align=left>Keyword</th>
+      </tr>
+      </thead>
+      {{#keys}}
+      <tr>
+          <td align=right>{{ value }}</td>
+          <td align=left><a href="{{ node_address }}/slice?any_tags={{ key }}" target="_blank">{{ key }}</a></td>
+      </tr>
+      {{/keys}}
+    </table>
+
