@@ -17,9 +17,9 @@ function (data) {
         i++;
     }
 //    alert(JSON.stringify(top, null, 4));
-    return {keys : top.rows};
+    return {node_address : NODE_ADDRESS,
+                    keys : top.rows}
 }
-
 /*  function truncate(string){
    if (string.length > 5)
       return string.substring(0,5)+'...';

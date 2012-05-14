@@ -9,8 +9,11 @@
       {{#keys}}
       <tr>
           <td align=right>{{ value }}</td>
-          <td align=left>{{ key }}</td>
+          <td align=left><a href="{{ node_address }}/slice?any_tags={{ key }}" target="_blank">{{ key }}</a></td>
       </tr>
       {{/keys}}
     </table>
+    <p>Note 1: The slice API has a small bug.  It returns all docs instead of 100 at a time.<br>
+       Note 2: Some hyperlinks don't work yet.</p>
+
 
